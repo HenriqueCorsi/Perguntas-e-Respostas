@@ -6,14 +6,14 @@ else:
     try:
         def escolhas_materias():
             print('\nSELECIONE AS MATÉRIAS')
-            materias = (
+            categoria = (
                 '{1} -> Matematica',
                 '{2} -> Ciências',
                 '{3} -> Inglês',
                 '{4} -> Espanhol',
                 '{5} -> Todas as materias',
             )
-            for loop in materias:
+            for loop in categoria:
                 print(loop)
 
 
@@ -23,7 +23,6 @@ else:
         if escolha_materias == 1:
             def matemaica():
                 print(f'\nMuito bem {nome}, vamos ao game!')
-                print('PERGUNTA VALENDO R$ 100.000')
                 print('\nQuanto é a metade de 6, mais 6 ?')
                 pergunta1 = (
                     '[1] -> 3',
@@ -38,7 +37,6 @@ else:
 
                 if select_questao1 == 3:
                     print('\nCerta resposta!')
-                    print('PERGUNTA VALENDO R$ 200.000')
                     print('\nPara calcular a potência de potência de mesma base, conserva a base e...')
                     pergunta2 = (
                         '[1] -> Multiplico os expoentes.',
@@ -53,7 +51,6 @@ else:
 
                     if select_questao2 == 1:
                         print('\nCerta Resposta!')
-                        print('PERGUNTA VALENDO R$ 300.000')
                         print('\nBilionésimo é um número ordinal equivalente a: ')
                         pergunta3 = (
                             '[1] -> Milhar',
@@ -68,7 +65,6 @@ else:
 
                         if select_questao3 == 2:
                             print('\nCerta Resposta!')
-                            print('PERGUNTA VALENDO R$ 400.000')
                             print('\nSomando a minha idade com a de meu irmão, obtenho 22 anos. Com quanto dara a soma'
                                   ' de nossas idades daqui a 3 anos?')
                             pergunta4 = (
@@ -84,7 +80,6 @@ else:
 
                             if select_questao4 == 3:
                                 print('\nCerta Resposta!')
-                                print('PERGUNTA VALENDO R$ 500.000')
                                 print('\nSegundo a regra, o módulo é sempre um número real: ')
                                 pergunta5 = (
                                     '[1] -> Não negativo',
@@ -114,7 +109,6 @@ else:
 
                                     if select_questao6 == 3:
                                         print('\nCerta Resposta!')
-                                        print('PERGUNTA VALENDO R$ 700.000')
                                         print('\nQual destes números não é racional: ')
                                         pergunta7 = (
                                             '[1] -> 0,333333...',
@@ -129,7 +123,6 @@ else:
 
                                         if select_questao7 == 4:
                                             print('\nCerta Resposta!')
-                                            print('PERGUNTA VALENDO R$ 800.000')
                                             print('\nQual número é maior que 7?')
                                             pergunta8 = (
                                                 '[1] -> 12',
@@ -144,7 +137,6 @@ else:
 
                                             if select_questao8 == 1:
                                                 print('\nCerta Resposta!')
-                                                print('PERGUNTA VALENDO R$ 900.000')
                                                 print('\nQuantas unidades encontramos em duas dúzias?')
                                                 pergunta9 = (
                                                     '[1] -> 10',
@@ -159,7 +151,6 @@ else:
 
                                                 if select_questao9 == 4:
                                                     print('\nCerta Resposta!')
-                                                    print('PERGUNTA VALENDO R$ 1.000.000')
                                                     print('\nO resultado da expressão 2 + 5 * 9 é:')
                                                     pergunta10 = (
                                                         '[1] -> 47',
@@ -174,7 +165,8 @@ else:
 
                                                     if select_questao10 == 1:
                                                         print('\nCerta Resposta!')
-                                                        print(f'\nPARABENS {nome.upper()} VOCÊ GANHOU R$ 1.000.000')
+                                                        print(f'\nPARABENS {nome.upper()} VOCÊ ACERTOU TODAS AS '
+                                                              f'PERGUNTAS')
                                                         input()
                                                     else:
                                                         print('\nResposta Errada')
@@ -357,6 +349,26 @@ else:
 
                                                     if select_questao9 == 1:
                                                         print('\nCerta Resposta')
+                                                        print('\nQual é o maior planeta do Sistema Solar?')
+                                                        pergunta10 = (
+                                                            '[1] -> Netuno',
+                                                            '[2] -> Júpiter',
+                                                            '[3] -> Vênus',
+                                                            '[4] -> Saturno',
+                                                        )
+                                                        for loop in pergunta10:
+                                                            print(loop)
+
+                                                        select_questao10 = int(input())
+
+                                                        if select_questao10 == 2:
+                                                            print('\nCerta Resposta')
+                                                            print(f'\nPARABENS {nome.upper()} VOCÊ ACERTOU TODAS AS '
+                                                                  f'PERGUNTAS')
+                                                            input()
+                                                        else:
+                                                            print('\nResposta Errada!')
+                                                            input()
                                                     else:
                                                         print('\nResposta Errada!')
                                                         input()
@@ -381,16 +393,14 @@ else:
                         else:
                             print('\nResposta Errada!')
                             input()
-
                     else:
                         print('\nResposta Errada!')
                         input()
                 else:
                     print('\nResposta Errada!')
                     input()
-
-
             ciencias()
+
         elif escolha_materias == 3:
             def ingles():
                 print(f'\nMuito bem {nome}, vamos ao game!')
@@ -451,6 +461,128 @@ else:
 
                             if select_questao3 == 4:
                                 print('\nCerta Resposta.')
+                                print('\nNeighbor é o mesmo que: ')
+                                pergunta4 = (
+                                    '[1] -> Prima',
+                                    '[2] -> Vizinho',
+                                    '[3] -> Madrinha',
+                                    '[4] -> Namorado',
+                                )
+                                for loop in pergunta4:
+                                    print(loop)
+
+                                select_questao4 = int(input())
+
+                                if select_questao4 == 2:
+                                    print('\nCerta Resposta.')
+                                    print('\nApós o casamento, o que a noiva sera do noivo? ')
+                                    pergunta5 = (
+                                        '[1] -> Grandmother',
+                                        '[2] -> Aunt',
+                                        '[3] -> Wife',
+                                        '[4] -> Daugther',
+                                    )
+                                    for loop in pergunta5:
+                                        print(loop)
+
+                                    select_questao5 = int(input())
+
+                                    if select_questao5 == 3:
+                                        print('\nCerta Resposta.')
+                                        print('\nQual dos profissionais a seguir trabalha no circo ?')
+                                        pergunta6 = (
+                                            '[1] -> A doctor',
+                                            '[2] -> A clown',
+                                            '[3] -> A nurse',
+                                            '[4] -> A painter',
+                                        )
+                                        for loop in pergunta6:
+                                            print(loop)
+
+                                        select_questao6 = int(input())
+
+                                        if select_questao6 == 2:
+                                            print('\nCerta Resposta.')
+                                            print('\nQual cor não aparece no arco-íris? ')
+                                            pergunta7 = (
+                                                '[1] -> Green',
+                                                '[2] -> Blue',
+                                                '[3] -> Black',
+                                                '[4] -> Orange',
+                                            )
+                                            for loop in pergunta7:
+                                                print(loop)
+
+                                            select_questao7 = int(input())
+
+                                            if select_questao7 == 3:
+                                                print('\nCerta Resposta.')
+                                                print('\nSafe is an adjective, what is its related noun?')
+                                                pergunta8 = (
+                                                    '[1] -> Safety',
+                                                    '[2] -> Safely',
+                                                    '[3] -> Safeness',
+                                                    '[4] -> Safer',
+                                                )
+                                                for loop in pergunta7:
+                                                    print(loop)
+
+                                                select_questao7 = int(input())
+
+                                                if select_questao7 == 1:
+                                                    print('\nCerta Resposta.')
+                                                    print('\nQual é o significado da palavra inglêsa KING?')
+                                                    pergunta9 = (
+                                                        '[1] -> Rato',
+                                                        '[2] -> Rei',
+                                                        '[3] -> Rainha',
+                                                        '[4] -> Rã',
+                                                    )
+                                                    for loop in pergunta9:
+                                                        print(loop)
+
+                                                    select_questao9 = int(input())
+
+                                                    if select_questao9 == 2:
+                                                        print('\nCerta Resposta.')
+                                                        print('\nBoxing day in the uk in on__________________.')
+                                                        pergunta10 = (
+                                                            '[1] -> December 23',
+                                                            '[2] -> December 31',
+                                                            '[3] -> December 26',
+                                                            '[4] -> December 25',
+                                                        )
+                                                        for loop in pergunta10:
+                                                            print(loop)
+
+                                                        select_questao10 = int(input())
+
+                                                        if select_questao10 == 3:
+                                                            print('\nCerta Resposta.')
+                                                            print(f'\nPARABENS {nome.upper()} VOCÊ ACERTOU TODAS AS '
+                                                                  f'PERGUNTAS')
+                                                            input()
+                                                        else:
+                                                            print('\nResposta Errada!')
+                                                            input()
+                                                    else:
+                                                        print('\nResposta Errada!')
+                                                        input()
+                                                else:
+                                                    print('\nResposta Errada!')
+                                                    input()
+                                            else:
+                                                print('\nResposta Errada!')
+                                                input()
+                                        else:
+                                            print('\nResposta Errada!')
+                                            input()
+                                    else:
+                                        print('\nResposta Errada!')
+                                        input()
+                                else:
+                                    print('\nResposta Errada!')
+                                    input()
                             else:
                                 print('\nResposta Errada!')
                                 input()
@@ -463,12 +595,11 @@ else:
                 else:
                     print('\nResposta Errada!')
                     input()
-
             ingles()
+
         elif escolha_materias == 4:
             def espanhol():
                 print(f'\nMuito bem {nome}, vamos ao game!')
-                print('PERGUNTA VALENDO R$ 100.000')
                 print('\nO que significa lambuzar?')
                 pergunta1 = (
                     '[1] -> Sujar',
@@ -483,7 +614,6 @@ else:
 
                 if select_questao1 == 1:
                     print('\nCerta Resposta.')
-                    print('PERGUNTA VALENDO R$ 200.000')
                     print('\nO verbo "TELEFONEAR" em espanhol pode ser substituído por:')
                     pergunta2 = (
                         '[1] -> Chamar',
@@ -498,7 +628,6 @@ else:
 
                     if select_questao2 == 3:
                         print('\nCerta Resposta.')
-                        print('PERGUNTA VALENDO R$ 300.000')
                         print('\nComo se diz "cigarro" em espanhol?')
                         pergunta3 = (
                             '[1] -> Cigarro',
@@ -513,7 +642,6 @@ else:
 
                         if select_questao3 == 4:
                             print('\nCerta Resposta.')
-                            print('PERGUNTA VALENDO R$ 400.000')
                             print('\n Ha numa cozinha, em espanhol, exceto: ')
                             pergunta4 = (
                                 '[1] -> Plato',
@@ -528,7 +656,6 @@ else:
 
                             if select_questao4 == 2:
                                 print('\nCerta Resposta.')
-                                print('PERGUNTA VALENDO R$ 500.000')
                                 print('\nSon platos españoles, expeto: ')
                                 pergunta5 = (
                                     '[1] -> Paella',
@@ -543,7 +670,6 @@ else:
 
                                 if select_questao5 == 3:
                                     print('\nCerta Resposta.')
-                                    print('PERGUNTA VALENDO R$ 600.000')
                                     print('\nEm espanhol, o verbo "QUEDAR" significa:')
                                     pergunta6 = (
                                         '[1] -> Ficar ',
@@ -558,7 +684,6 @@ else:
 
                                     if select_questao6 == 1:
                                         print('\nCerta Resposta.')
-                                        print('PERGUNTA VALENDO R$ 700.000')
                                         print('\nA expressão "ESTAR EMBARAZADA" em espanhol significa: ')
                                         pergunta7 = (
                                             '[1] -> Estar com medo',
@@ -573,7 +698,6 @@ else:
 
                                         if select_questao7 == 4:
                                             print('\nCerta Resposta.')
-                                            print('PERGUNTA VALENDO R$ 800.000')
                                             print('\nSão meios de transporte, em espanholm exceto:')
                                             pergunta8 = (
                                                 '[1] -> Avión',
@@ -588,7 +712,6 @@ else:
 
                                             if select_questao8 == 3:
                                                 print('\nCerta Resposta.')
-                                                print('PERGUNTA VALENDO R$ 900.000')
                                                 print('\n A que parte do corpo se refere a palavra "TOBILLO" em '
                                                       'espanhol: ')
                                                 pergunta9 = (
@@ -604,7 +727,6 @@ else:
 
                                                 if select_questao9 == 4:
                                                     print('\nCerta Resposta.')
-                                                    print('PERGUNTA VALENDO R$ 1.000.000')
                                                     print(
                                                         '\nA expressão "LA COMIDA ESTÁ EXQUISITA" em espanhol '
                                                         'significa:')
@@ -621,7 +743,8 @@ else:
 
                                                     if select_questao10 == 2:
                                                         print('\nCerta Resposta.')
-                                                        print(f'\nPARABENS {nome.upper()} VOCÊ GANHOU R$ 1.000.000')
+                                                        print(f'\nPARABENS {nome.upper()} VOCÊ ACERTOU TODAS AS '
+                                                              f'PERGUNTAS')
                                                         input()
 
                                                 else:
@@ -651,12 +774,11 @@ else:
                 else:
                     print('\nResposta Errada!')
                     input()
-
             espanhol()
+
         elif escolha_materias == 5:
             def todas_materias():
                 print(f'\nMuito bem {nome}, vamos ao game!')
-                print('PERGUNTA VALENDO R$ 100.000')
                 print('\nFesta popular brasileira muito divulgada no exterior: ')
                 pergunta1 = (
                     '[1] -> Pascoa',
@@ -671,7 +793,6 @@ else:
 
                 if select_questao1 == 2:
                     print('\nCerta Resposta.')
-                    print('PERGUNTA VALENDO R$ 200.000')
                     print('\nQual o ano da comemoração dos 500 anos do descobrimento do Brasil?')
                     pergunta2 = (
                         '[1] -> 1998',
@@ -686,7 +807,6 @@ else:
 
                     if select_questao2 == 3:
                         print('\nCerta Resposta.')
-                        print('PERGUNTA VALENDO R$300.000')
                         print('\nHa quantos anos o Brasil foi descoberto? ')
                         pergunta3 = (
                             '[1] -> 50 anos',
@@ -701,7 +821,6 @@ else:
 
                         if select_questao3 == 2:
                             print('\nCerta Resposta.')
-                            print('PERGUNTA VALENDO R$ 400.000')
                             print('\nAquele que ocupa a terra sem ter o título de propriedade chama-se de:')
                             pergunta4 = (
                                 '[1] -> Posseiro',
@@ -716,7 +835,6 @@ else:
 
                             if select_questao4 == 1:
                                 print('\nCerta Resposta.')
-                                print('PERGUNTA VALENDO R$ 500.000')
                                 print('\nQual é o contrario de altruísmo?')
                                 pergunta5 = (
                                     '[1] -> Amor',
@@ -731,7 +849,6 @@ else:
 
                                 if select_questao5 == 2:
                                     print('\nCerta Resposta.')
-                                    print('PERGUNTA VALENDO R$ 600.000')
                                     print('\nQual é o antônimo de ida?')
                                     pergunta6 = (
                                         '[1] -> Retirada',
@@ -746,7 +863,6 @@ else:
 
                                     if select_questao6 == 3:
                                         print('\nCerta Resposta.')
-                                        print('PERGUNTA VALENDO R$ 700.000')
                                         print('\nQual é o objeto ultilizado pelos deficientes visuais para tatear '
                                               'o caminho?')
                                         pergunta7 = (
@@ -762,7 +878,6 @@ else:
 
                                         if select_questao7 == 3:
                                             print('\nCerta Resposta.')
-                                            print('PERGUNTA VALENDO R$ 800.000')
                                             print('\nDolência significa: ')
                                             pergunta8 = (
                                                 '[1] -> Amor',
@@ -777,7 +892,6 @@ else:
 
                                             if select_questao8 == 2:
                                                 print('\nCerta Resposta.')
-                                                print('PERGUNTA VALENDO R$ 900.000')
                                                 print('\nComo é conhecido o colégio que aceita alunos de ambos os '
                                                       'sexo:')
                                                 pergunta9 = (
@@ -793,7 +907,6 @@ else:
 
                                                 if select_questao9 == 2:
                                                     print('\nCerta Resposta.')
-                                                    print('PERGUNTA VALENDO R$ 1.000.000')
                                                     print('\nTermo que define "tudo o que aconte na natureza": ')
                                                     pergunta10 = (
                                                         '[1] -> Acontecimento',
@@ -808,7 +921,8 @@ else:
 
                                                     if select_questao10 == 4:
                                                         print('\nCerta Resposta.')
-                                                        print(f'\nPARABENS {nome.upper()} VOCÊ GANHOU R$ 1.000.000')
+                                                        print(f'\nPARABENS {nome.upper()} VOCÊ ACERTOU TODAS AS '
+                                                              f'PERGUNTAS')
                                                         input()
                                                     else:
                                                         print('\nResposta Errada!')
@@ -825,12 +939,9 @@ else:
                                     else:
                                         print('\nResposta Errada!')
                                         input()
-
                             else:
                                 print('\nResposta Errada!')
                                 input()
-
-
                         else:
                             print('\nResposta Errada!')
                             input()
@@ -840,8 +951,8 @@ else:
                 else:
                     print('\nResposta Errada!')
                     input()
-
             todas_materias()
+
         else:
             print('Opção invalida')
             input()
