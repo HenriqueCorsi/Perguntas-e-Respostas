@@ -9,6 +9,11 @@ O programa se consiste em um  mini game de perguntas e respostas, onde o usuári
 
 Python: Linguagem de programação de sintaxe simples.
 
+# Funcionamento
+
+
+
+![Menu ](https://user-images.githubusercontent.com/106001465/170134226-38c0300c-bde3-4e6a-a66b-bf2902511f06.PNG)
 
 
 
