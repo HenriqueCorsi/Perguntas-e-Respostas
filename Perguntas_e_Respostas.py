@@ -4,7 +4,7 @@ except ValueError:
     print('Nome Invalido')
 else:
     try:
-        def escolhas_materias():
+        def escolhas_categoria():
             print('\nSELECIONE AS MATÉRIAS')
             categoria = (
                 '{1} -> Matematica',
@@ -17,7 +17,7 @@ else:
                 print(loop)
 
 
-        escolhas_materias()
+        escolhas_categoria()
 
         escolha_materias = int(input())
         if escolha_materias == 1:
@@ -51,6 +51,7 @@ else:
 
                     if select_questao2 == 1:
                         print('\nCerta Resposta!')
+                        print('Opção Inválida')
                         print('\nBilionésimo é um número ordinal equivalente a: ')
                         pergunta3 = (
                             '[1] -> Milhar',
@@ -94,7 +95,6 @@ else:
 
                                 if select_questao5 == 1:
                                     print('\nCerta Resposta!')
-                                    print('PERGUNTA VALENDO R$ 600.000')
                                     print('\nQual é o número seguinte na sequência 421, 332, 243...?')
                                     pergunta6 = (
                                         '[1] -> 152',
@@ -237,10 +237,10 @@ else:
                         print('\nCerta Resposta.')
                         print('\nA adição de saliva ao bolo alimentar constitui aquilo que chamamos de:')
                         pergunta3 = (
-                            '[1] -> Salivação'
-                            '[2] -> Ensalivação'
-                            '[3] -> Deglutição'
-                            '[4] -> Digistão'
+                            '[1] -> Salivação',
+                            '[2] -> Ensalivação',
+                            '[3] -> Deglutição',
+                            '[4] -> Digistão',
                         )
                         for loop in pergunta3:
                             print(loop)
